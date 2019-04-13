@@ -15,12 +15,12 @@ CRYPTO_PARAMETERS = {
 }
 CRYPTO_HEADERS = {
     'Accepts': 'application/json',
-    'X-CMC_PRO_API_KEY': 'c49ef7eb-be95-4594-91e6-837b44364162',
+    'X-CMC_PRO_API_KEY': '{key}', # you should provide actual key here
 }
 
 session = Session()
 session.headers.update(CRYPTO_HEADERS)
-IFTTT_WEBHOOKS_URL = 'https://maker.ifttt.com/trigger/{}/with/key/jskuMxaLNPH1OQF1eULbVGsJ6gKLOeCO050ecjlJE2Y'
+IFTTT_WEBHOOKS_URL = 'https://maker.ifttt.com/trigger/{}/with/key/{key}' # you should provide actual key here
 
 def main():
     bitcoin_history = []
